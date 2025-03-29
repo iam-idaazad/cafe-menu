@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Desserts</title>
+    <!-- Google Fonts - Quicksand -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="menu.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Specific styles for dessert items */
+        .dessert-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        .dessert-card {
+            text-decoration: none;
+            color: #FDF8E1;
+            background: #4E6C50;
+            padding: 15px 15px 10px 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(78, 59, 45, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+            width: 230px; /* Adjusted for better fit with 4 per row */
+            height: 380px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 10px;
+        }
+
+        .dessert-card:hover {
+            transform: scale(1.05);
+            background: #3A5040;
+        }
+
+        .dessert-card img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+
+        .dessert-card h3 {
+            font-weight: 500;
+            color: #FDF8E1;
+            padding-top: 5px;
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 20px;
+            transition: font-size 0.3s;
+        }
+
+        .dessert-card:hover h3 {
+            font-size: 22px;
+        }
+
+        .dessert-card p {
+            color: #FDF8E1;
+            margin: 0;
+            font-size: 16px;
+            padding: 0 5px;
+        }
+
+        .dessert-card .price {
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        /* Rows with 4 items */
+        .dessert-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Slightly reduced to ensure 4 cards fit perfectly */
+            margin-bottom: 50px;
+            flex-wrap: nowrap; /* Changed to nowrap to prevent wrapping */
+            padding: 0;
+            width: 100%;
+            max-width: 1080px; /* Optimized width for 4 cards of 230px + gaps + margins */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Container for all rows */
+        .dessert-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        /* For screens smaller than 1100px, allow wrapping */
+        @media (max-width: 1100px) {
+            .dessert-row {
+                flex-wrap: wrap;
+            }
+        }
+
+        /* Navigation styles */
+        .nav-right a {
+            color: #444444; /* Match the Contact Us button color from menu.css */
+        }
+        
+        .nav-right a i {
+            color: #555555; /* Match the icon color in the Contact Us button */
+        }
+        
+        .nav-right a:hover {
+            background-color: #4E6C50; /* Keep the same hover background */
+            color: white; /* Keep the same hover text color */
+        }
+        
+        .nav-right a:hover i {
+            color: white; /* Ensure icon turns white on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="nav-left">
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+            <a href="story.html"><i class="fas fa-map-marker-alt"></i> Find Store</a>
+        </div>
+        <div class="nav-right">
+            <a href="menu.html"><i class="fas fa-arrow-left"></i> Back to Menu</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>DESSERTS</h1>
+    </header>
+
+    <main>
+        <div class="dessert-container">
+            <!-- First row: 4 desserts -->
+            <div class="dessert-row">
+                <div class="dessert-card">
+                    <img src="matcha doughnut.jpeg" alt="Glazed Doughnut">
+                    <h3>Matcha doughnut</h3>
+                    <p>A doughnut made with matcha powder, flour, sugar, eggs, and milk, topped with a matcha glaze.</p>
+                    <p class="price">$3.50</p>
+                </div>
+
+                <div class="dessert-card">
+                    <img src="chocolate doughnut.jpeg" alt="Jelly Doughnut">
+                    <h3>chocolate doughnut</h3>
+                    <p>A rich chocolate doughnut made with cocoa powder, flour, sugar, eggs, and milk, topped with chocolate glaze.</p>
+                    <p class="price">$3.95</p>
+                </div>
+
+                <div class="dessert-card">
+                    <img src="strawberry doughnut.jpeg" alt="Tiramisu">
+                    <h3>strawberry doughnut</h3>
+                    <p>A soft doughnut made with flour, sugar, eggs, and milk, topped with sweet strawberry glaze.</p>
+                    <p class="price">$6.25</p>
+                </div>
+
+                <div class="dessert-card">
+                    <img src="vanilla doughnut.jpeg" alt="Chocolate Doughnut">
+                    <h3>vanilla doughnut</h3>
+                    <p>A classic doughnut made with flour, sugar, eggs, and milk, flavored with vanilla and topped with vanilla glaze.</p>
+                    <p class="price">$3.75</p>
+                </div>
+            </div>
+
+            <!-- Second row: 4 desserts -->
+            <div class="dessert-row">
+                <div class="dessert-card">
+                    <img src="apple pie.jpeg" alt="Apple Pie">
+                    <h3>apple pie</h3>
+                    <p>A flaky pastry filled with cinnamon-spiced apples, baked to golden perfection.</p>
+                    <p class="price">$5.50</p>
+                </div>
+
+                <div class="dessert-card">
+                    <img src="vanilla cookie.jpeg" alt="Strawberry Doughnut">
+                    <h3>vanilla cookie</h3>
+                    <p>A buttery, crisp cookie flavored with sweet vanilla.</p>
+                    <p class="price">$3.95</p>
+                </div>
+
+                <div class="dessert-card">
+                    <img src="chocolate cookie.jpeg" alt="Boston Cream Doughnut">
+                    <h3>chocolate cookie</h3>
+                    <p>A rich, chewy cookie made with cocoa and chocolate chips.</p>
+                    <p class="price">$4.25</p>
+                </div>
+
+                <div class="dessert-card">
+                    <img src="matcha cookie.jpeg" alt="Maple Bacon Doughnut">
+                    <h3>matcha cookie</h3>
+                    <p>A soft, chewy cookie infused with earthy matcha flavor.</p>
+                    <p class="price">$4.25</p>
+                </div>
+            </div>
+
+            <!-- Third row: 4 desserts -->
+            <div class="dessert-row">
+                <div class="dessert-card">
+                    <img src="waffle.jpeg" alt="Fresh Fruit Tart">
+                    <h3>waffle</h3>
+                    <p>A light and crispy treat with a golden-brown exterior and soft, airy interior, often served with toppings like syrup or fruit.</p>
+                    <p class="price">$6.95</p>
+                </div>
+
+                <div class="dessert-card">
+                    <img src="crescent.jpeg" alt="Cinnamon Sugar Doughnut">
+                    <h3>crescent</h3>
+                    <p>A buttery, flaky pastry shaped like a crescent, often enjoyed as a breakfast or snack.</p>
+                    <p class="price">$3.50</p>
+                </div>
+
+                <div class="dessert-card">
+                    <img src="cheese cake.jpeg" alt="Vanilla Panna Cotta">
+                    <h3>cheese cake</h3>
+                    <p>A creamy, smooth dessert made with cream cheese, sugar, and a buttery crust.</p>
+                    <p class="price">$5.95</p>
+                </div>
+
+                <div class="dessert-card">
+                    <img src="lotus cake.jpeg" alt="Blueberry Doughnut">
+                    <h3>lotus cake</h3>
+                    <p>A rich, creamy cake made with Lotus Biscoff cookies, often featuring a caramelized flavor and smooth frosting.</p>
+                    <p class="price">$4.25</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tagline">
+            Sweet treats, crafted with love.
+        </div>
+    </main>
+</body>
+
+</html>
