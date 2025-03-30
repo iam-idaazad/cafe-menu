@@ -6,21 +6,21 @@ body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF; /* Changed to pure white background */
+    background-color: #FFFFFF; /* Changed from #EEE4B0 to white */
     text-align: center;
-    color: #4E3B2D; /* Updated: deep mocha text color */
-    font-weight: 500; /* Standardized font weight to match nav buttons */
-    font-size: 18px; /* Standardized font size to match nav buttons */
+    color: #4E3B2D; /* deep mocha text color */
+    font-weight: 500;
+    font-size: 18px;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: white; /* Changed to white background */
+    background-color: white;
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Lighter shadow for white nav */
-    border-bottom: 2px solid #F5E8D0; /* Subtle border to define the nav area */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #F5E8D0;
 }
 
 /* Left side navigation buttons */
@@ -31,7 +31,7 @@ nav {
 
 /* Left side nav buttons - Contact Us and Find Store */
 .nav-left a {
-    color: #444444; /* Changed from black to slightly lighter dark gray */
+    color: #444444;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
@@ -45,16 +45,16 @@ nav {
 
 .nav-left a i {
     font-size: 20px;
-    color: #555555; /* Changed from black to medium dark gray for icons */
+    color: #555555;
 }
 
 .nav-left a:hover {
-    background-color: #4E6C50; /* Kept: muted forest green for hover */
-    color: white; /* White text on hover */
+    background-color: #D5E69E; /* Changed from #233F86 to #D5E69E - mint green */
+    color: #444444; /* Changed to dark text for better readability on light background */
 }
 
 .nav-left a:hover i {
-    color: white; /* White icon on hover */
+    color: #444444; /* Changed to dark for better visibility on mint green */
 }
 
 /* Right side navigation (existing menu items) */
@@ -65,7 +65,7 @@ nav {
 
 /* Default nav links (for any that aren't in nav-left) */
 nav a {
-    color: #8B5E3C; /* Coffee brown for other nav links */
+    color: #8B5E3C;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
@@ -79,25 +79,25 @@ nav a {
 
 nav a i {
     font-size: 20px;
-    color: #4E6C50; /* Darker green for icons in other nav links */
+    color: #D5E69E; /* Changed from #233F86 to #D5E69E - mint green */
 }
 
 nav a:hover {
-    background-color: #4E6C50; /* Muted forest green for hover */
-    color: white; /* White text on hover */
+    background-color: #D5E69E; /* Changed from #233F86 to #D5E69E - mint green */
+    color: #444444; /* Changed to dark text for better readability */
 }
 
 /* Header */
 header {
-    background-color: #4E6C50; /* Changed to match the green used in Contact Us hover state */
-    color: #FDF8E1; /* Kept: warm cream for contrast */
+    background-color: #D5E69E; /* Changed from #233F86 to #D5E69E - mint green */
+    color: #444444; /* Changed to dark for better contrast on mint green */
     padding: 10px 0;
     font-size: 20px;
 }
 
 h1 {
     margin: 0;
-    font-weight: 500; /* Changed from 600 to 500 to match nav buttons */
+    font-weight: 500;
     letter-spacing: 1px;
 }
 
@@ -112,55 +112,55 @@ h1 {
 
 .main-items a {
     text-decoration: none;
-    color: #FDF8E1; /* Changed to cream color for better contrast against green */
-    background: #4E6C50; /* Changed to match the green used in Contact Us hover state */
-    padding: 15px 15px 10px 15px; /* Reduced bottom padding from 15px to 10px */
+    color: #444444; /* Changed to dark for better contrast on mint green */
+    background: #D5E69E; /* Changed from #233F86 to #D5E69E - mint green */
+    padding: 15px 15px 10px 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(78, 59, 45, 0.2); /* Updated shadow for green cards */
-    transition: transform 0.3s, box-shadow 0.3s, background 0.3s; /* Added background to transitions */
+    box-shadow: 0 4px 6px rgba(213, 230, 158, 0.3); /* Updated shadow for mint green cards */
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
     width: 250px;
     height: 320px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Changed from space-between to flex-start to allow tighter spacing */
+    justify-content: flex-start;
 }
 
 .main-items a:hover {
     transform: scale(1.05);
-    background: #3A5040; /* Changed to a darker forest green for hover state */
+    background: #B8C97F; /* Changed to a darker mint green for hover state */
 }
 
 .main-items a:hover h2 {
-    font-size: 21px; /* Increased from 19px to 21px for more noticeable text enlargement on hover */
+    font-size: 21px;
     transition: font-size 0.3s;
 }
 
 .main-items img {
     width: 100%;
     height: 220px;
-    border-radius: 10px; /* Changed from 10px 10px 0 0 to make all corners rounded */
+    border-radius: 10px;
     object-fit: cover;
-    margin-bottom: 5px; /* Reduced from default to bring text closer */
+    margin-bottom: 5px;
 }
 
 .main-items h2 {
-    font-weight: 500; /* Changed from 600 to 500 to match nav buttons */
-    color: #FDF8E1; /* Changed to cream color for better readability on green */
-    padding-top: 5px; /* Reduced from 10px to 5px */
-    margin-top: 0; /* Ensure no top margin */
-    margin-bottom: 0; /* Added to remove extra space where the line was */
-    font-size: 18px; /* Standardized to match nav buttons */
-    transition: font-size 0.3s; /* Added for smooth text size transition */
+    font-weight: 500;
+    color: #444444; /* Changed to dark for better contrast on mint green */
+    padding-top: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    transition: font-size 0.3s;
 }
 
 /* Tagline styling */
 .tagline {
-    color: #444444; /* Changed back to dark gray to match Contact Us button */
+    color: #444444;
     font-style: normal;
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 20px; /* Increased from 18px for more prominence */
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: normal;
 }
