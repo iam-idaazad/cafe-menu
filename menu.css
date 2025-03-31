@@ -101,57 +101,56 @@ h1 {
     letter-spacing: 1px;
 }
 
-/* Main Items */
+/* Updated Menu Items with Bootstrap compatibility */
+.menu-item {
+    text-decoration: none;
+    color: #444444;
+    background: #D5E69E;
+    padding: 15px 15px 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(213, 230, 158, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    background: #B8C97F;
+    text-decoration: none;
+    color: #444444;
+}
+
+.menu-item:hover h2 {
+    font-size: 21px;
+    transition: font-size 0.3s;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.menu-item h2 {
+    font-weight: 500;
+    color: #444444;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    transition: font-size 0.3s;
+}
+
+/* Keep compatibility with old main-items class in case it's used elsewhere */
 .main-items {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 20px;
     margin-top: 15px;
-}
-
-.main-items a {
-    text-decoration: none;
-    color: #444444; /* Changed to dark for better contrast on mint green */
-    background: #D5E69E; /* Changed from #233F86 to #D5E69E - mint green */
-    padding: 15px 15px 10px 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(213, 230, 158, 0.3); /* Updated shadow for mint green cards */
-    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-    width: 250px;
-    height: 320px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.main-items a:hover {
-    transform: scale(1.05);
-    background: #B8C97F; /* Changed to a darker mint green for hover state */
-}
-
-.main-items a:hover h2 {
-    font-size: 21px;
-    transition: font-size 0.3s;
-}
-
-.main-items img {
-    width: 100%;
-    height: 220px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-bottom: 5px;
-}
-
-.main-items h2 {
-    font-weight: 500;
-    color: #444444; /* Changed to dark for better contrast on mint green */
-    padding-top: 5px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 18px;
-    transition: font-size 0.3s;
 }
 
 /* Tagline styling */
@@ -163,4 +162,35 @@ h1 {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: normal;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .menu-item img {
+        height: 180px;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-left {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-item {
+        margin-bottom: 20px;
+    }
+    
+    .menu-item img {
+        height: 200px;
+    }
+    
+    .nav-left {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
