@@ -1,63 +1,45 @@
 <!DOCTYPE html>
-
 <head>
-    <title>MENU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Google Fonts - Quicksand -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="menu.css">
-    <!-- Add Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>MENU</title>
+  <link rel="stylesheet" href="menu.css">
 </head>
-
 <body>
-    <!-- Added navigation bar -->
-    <nav>
-        <div class="nav-left">
-            <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
-            <a href="find-store.html"><i class="fas fa-map-marker-alt"></i> Find Store</a>
-        </div>
-        <div class="nav-right">
-            <!-- You can add more navigation links here -->
-        </div>
+  <header class="header">
+    <nav class="welcoming-nav">
+      <a href="#">Contact Us</a>
+      <a href="#">Find Store</a>
     </nav>
+    <div class="header-content">
+      <h1>Cozy and Welcoming!</h1>
+      <p>Welcome to Your Daily Dose of Warmth and Flavor.</p>
+    </div>
+  </header>
 
-    <header>
-        <h1>MENU</h1>
-    </header>
+  <section class="menu-section">
+    <div class="menu-item">
+      <div class="menu-image">
+        <img src="cold-bar.jpeg">
+      </div>
+      <p>Cold Bar</p>
+    </div>
 
-    <main>
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 mb-4">
-                    <a href="cold-bar.html" class="menu-item d-block">
-                        <img src="cold-bar.jpeg" class="img-fluid rounded">
-                        <h2>Cold Bar</h2>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 mb-4">
-                    <a href="hot-bar.html" class="menu-item d-block">
-                        <img src="hot-bar.jpeg" class="img-fluid rounded">
-                        <h2>Hot Bar</h2>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-12 col-12 mb-4">
-                    <a href="dessert.html" class="menu-item d-block">
-                        <img src="dessert.jpeg" class="img-fluid rounded">
-                        <h2>Desserts</h2>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="tagline">
-            Freshly brewed, just for you.
-        </div>
-    </main>
+    <div class="menu-item">
+      <div class="menu-image">
+        <img src="hot-bar.jpeg">
+      </div>
+      <p>Hot Bar</p>
+    </div>
 
-    <!-- Bootstrap JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="menu-item">
+      <div class="menu-image">
+        <img src="dessert.jpeg">
+      </div>
+      <p>Desserts</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Freshly brewed, just for you.</p>
+  </footer>
 </body>
-
 </html>
