@@ -15,6 +15,12 @@ body {
 
   a {
     color: #ffffffab;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  a:hover{
+    color: #4259c3;
   }
   
   .header-content h1 {
