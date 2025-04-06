@@ -18,17 +18,21 @@ body {
     text-decoration: none;
     margin-right: 10px;
   }
-
+  
   a:hover{
     color: #4259c3;
   }
   
   .header-content h1 {
+    font-family: 'Berkshire Swash', sans-serif;
     font-size: 2cm;
   }
   
   .header-content p {
     font-size: 25px;
+    font-family: 'Poiret One', sans-serif;
+    color: white;
+
   }
   
   .menu-section {
@@ -55,6 +59,7 @@ body {
     margin-top: 5px;
     font-size: 15px;
     font-weight: 500;
+
   }
   
   .footer {
