@@ -1,8 +1,17 @@
+/* *{
+margin: 0;
+padding: 0;
+} */
+
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #fffbe6;
-    color: #333;
+    background-image: url(body.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
   }
   
   .header {
@@ -29,8 +38,7 @@ body {
   }
   
   .header-content p {
-    font-size: 25px;
-    font-family: 'Poiret One', sans-serif;
+    font-size: 17px;
     color: white;
 
   }
@@ -47,7 +55,7 @@ body {
     text-align: center;
   }
   
-
+  
   
   .menu-image img {
     max-width: 170px;
@@ -66,5 +74,47 @@ body {
     text-align: center;
     padding: 20px;
     font-size: 1.1rem;
+  }
+  
+  .matcha-welcoming {
+    background-color: #f7f2eeb9;
+  }
+  
+  .matcha-welcoming-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 10px;
+    gap: 30px;
+    flex-wrap: wrap; /* makes it responsive on smaller screens */
+  }
+  
+  .matcha-images {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .matcha-welcoming-img {
+    width: 450px;
+    height: auto;
+  }
+  
+  .matcha-text {
+    max-width: 400px;
+    font-family: 'Quicksand', sans-serif;
+    color: #000000;
+    margin-top: -200px;
+  }
+  
+  .matcha-text h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .matcha-text p {
+    font-size: 18px;
+    line-height: 1.6;
   }
   
