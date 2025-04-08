@@ -4,131 +4,146 @@ padding: 0;
 } */
 
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-image: url(_\ \(5\).jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #ffffff;
-  }
-  
-  .header {
-    background: url('header.jpg')no-repeat center center/cover;
-    color: #ffffffab;
-    padding: 70px;
-    text-align: left;
-    /*position: relative;*/
-  }
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url(_\ \(5\).jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+}
 
-  a {
-    color: #ffffffab;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-  
-  a:hover{
-    color: #ffffff;
-  }
-  
-  .header-content h1 {
-    font-family: 'Berkshire Swash', sans-serif;
-    font-size: 2cm;
-  }
-  
-  .header-content p {
-    font-size: 17px;
-    color: white;
+.header {
+  background: url('header.jpg')no-repeat center center/cover;
+  color: #ffffffab;
+  padding: 70px;
+  text-align: left;
+  /*position: relative;*/
+}
 
-  }
-  
-  .menu-section {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 40px 20px;
-    margin-top: -100px;
-  }
+a {
+  color: #ffffffab;
+  text-decoration: none;
+  margin-right: 10px;
+}
 
+a:hover {
+  color: #ffffff;
+}
 
-  
-  .menu-item {
-    text-align: center;
-  }
-  
-  
-  
-  .menu-image img {
-    max-width: 170px;
-    max-height: 170px;
-    border-radius: 100%;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .menu-image img:hover {
-    transform: scale(1.2);
-  }
-  
-  .menu-item p {
-    margin-top: 15px;
-    font-size: 17px;
-    font-weight: 500;
+.header-content h1 {
+  font-family: 'Berkshire Swash', sans-serif;
+  font-size: 2cm;
+}
 
-  }
-  
-  .footer {
-    background-color: #ffffff4f;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    font-size: 1.1rem;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-  
-  .matcha-welcoming {
-    background-color: #f7f2ee27;
-  }
-  
-  .matcha-welcoming-container {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-left: 10px;
-    gap: 30px;
-    flex-wrap: wrap; /* makes it responsive on smaller screens */
-  }
-  
-  .matcha-images {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  
-  .matcha-welcoming-img {
-    width: 450px;
-    height: auto;
-  }
-  
-  .matcha-text {
-    max-width: 350px;
-    color: #000000bd;
-    background-color: #ffffff9f;
-  }
-  
-  .matcha-text h1 {
-    font-size: 50px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-  }
-  
-  .matcha-text p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-left: 5px;
-  }
+.header-content p {
+  font-size: 17px;
+  color: white;
+
+}
+
+.menu-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px 20px;
+  margin-top: -100px;
+}
 
 
-  
+
+.menu-item {
+  text-align: center;
+}
+
+
+
+.menu-image img {
+  max-width: 170px;
+  max-height: 170px;
+  border-radius: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-image img:hover {
+  transform: scale(1.2);
+}
+
+.menu-item p {
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: 500;
+
+}
+
+.footer {
+  background-color: ffbd8727;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1rem;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.matcha-welcoming {
+  background-color: #ffbd8727;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.matcha-welcoming-container {
+  display: flex;
+  align-items: stretch;
+  /* Ensure equal height for all items */
+  justify-content: space-between;
+  /* Distribute evenly across the container */
+  flex-wrap: nowrap;
+  /* Prevent wrapping */
+}
+
+.matcha-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  /* Adjust this to control the width of the images */
+}
+
+.matcha-welcoming-img {
+  width: 48%;
+  /* Ensure the images take up the available space equally */
+  height: 100%;
+  /* Make the height of the images match the container */
+  object-fit: cover;
+  /* Ensure the images cover the available height */
+}
+
+.matcha-text {
+  max-width: 35%;
+  /* Control the width of the text container */
+  color: #000000bd;
+  background-color: #ffffff9f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Vertically center the text */
+  padding: 10px;
+  /* Add some padding inside the text block */
+}
+
+.matcha-text h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.matcha-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-left: 5px;
+}
