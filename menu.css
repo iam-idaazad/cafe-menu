@@ -1,12 +1,7 @@
-/* *{
-margin: 0;
-padding: 0;
-} */
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-image: url(_\ \(5\).jpeg);
+  background-image: url('body.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -15,11 +10,10 @@ body {
 }
 
 .header {
-  background: url('header.jpg')no-repeat center center/cover;
+  background: url('header.jpg') no-repeat center center/cover;
   color: #ffffffab;
   padding: 70px;
   text-align: left;
-  /*position: relative;*/
 }
 
 a {
@@ -40,7 +34,6 @@ a:hover {
 .header-content p {
   font-size: 17px;
   color: white;
-
 }
 
 .menu-section {
@@ -49,15 +42,12 @@ a:hover {
   gap: 50px;
   padding: 40px 20px;
   margin-top: -100px;
+  flex-wrap: wrap;
 }
-
-
 
 .menu-item {
   text-align: center;
 }
-
-
 
 .menu-image img {
   max-width: 170px;
@@ -74,36 +64,19 @@ a:hover {
   margin-top: 15px;
   font-size: 17px;
   font-weight: 500;
-
-}
-
-.footer {
-  background-color: ffbd8727;
-  color: black;
-  text-align: center;
-  padding: 20px;
-  font-size: 1.1rem;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .matcha-welcoming {
   background-color: #ffbd8727;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0 100px;
   padding: 0;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .matcha-welcoming-container {
   display: flex;
   align-items: stretch;
-  /* Ensure equal height for all items */
   justify-content: space-between;
-  /* Distribute evenly across the container */
   flex-wrap: nowrap;
-  /* Prevent wrapping */
 }
 
 .matcha-images {
@@ -111,29 +84,22 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   width: 60%;
-  /* Adjust this to control the width of the images */
 }
 
 .matcha-welcoming-img {
   width: 48%;
-  /* Ensure the images take up the available space equally */
   height: 100%;
-  /* Make the height of the images match the container */
   object-fit: cover;
-  /* Ensure the images cover the available height */
 }
 
 .matcha-text {
   max-width: 35%;
-  /* Control the width of the text container */
   color: #000000bd;
   background-color: #ffffff9f;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Vertically center the text */
   padding: 10px;
-  /* Add some padding inside the text block */
 }
 
 .matcha-text h1 {
@@ -146,4 +112,79 @@ a:hover {
   font-size: 18px;
   line-height: 1.6;
   margin-left: 5px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .header-content h1 {
+    font-size: 1.5cm;
+  }
+
+  .menu-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 0;
+  }
+
+  .matcha-welcoming {
+    margin: 0 30px;
+  }
+
+  .matcha-welcoming-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .matcha-images {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .matcha-welcoming-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .matcha-text {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .matcha-text h1 {
+    font-size: 32px;
+    margin-left: 0;
+  }
+
+  .matcha-text p {
+    font-size: 16px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 1.2cm;
+  }
+
+  .menu-image img {
+    max-width: 130px;
+    max-height: 130px;
+  }
+
+  .matcha-text h1 {
+    font-size: 28px;
+  }
+
+  .matcha-text p {
+    font-size: 15px;
+  }
 }
