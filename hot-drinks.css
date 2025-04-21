@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-image: url('body.jpeg');
+    background-image: url('./index-pictures/body-background.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -16,7 +16,7 @@ body {
   }
   
   .header-content {
-    background: url('4002937.jpg') no-repeat center center/cover;
+    background: url('./hot-drinks-pictures/hot-drinks-header.jpg') no-repeat center center/cover;
     padding: 70px;
     background-repeat: no-repeat;
   }
