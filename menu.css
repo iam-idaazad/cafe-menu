@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Cairo', sans-serif;
   background-image: url('./index-pictures/body-background.jpeg');
   background-repeat: no-repeat;
   background-position: center;
@@ -11,7 +11,7 @@ body {
 
 .header {
   background: url('./index-pictures/index-header.jpg') no-repeat center center/cover;
-  color: #ffffffab;
+  color: #ffffff;
   padding: 70px;
   text-align: left;
 }
@@ -27,7 +27,7 @@ a:hover {
 }
 
 .header-content h1 {
-  font-family: 'Berkshire Swash', sans-serif;
+  font-family: 'Ruwudu', sans-serif;
   font-size: 2cm;
 }
 
