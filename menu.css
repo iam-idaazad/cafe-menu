@@ -66,33 +66,33 @@ a:hover {
   font-weight: 500;
 }
 
-.matcha-welcoming {
+.index-welcoming {
   background-color: #ffbd8727;
   margin: 0 100px;
   padding: 0;
 }
 
-.matcha-welcoming-container {
+.index-welcoming-container {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
 
-.matcha-images {
+.index-pictures {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 60%;
 }
 
-.matcha-welcoming-img {
+.index-welcoming-pic {
   width: 48%;
   height: 100%;
   object-fit: cover;
 }
 
-.matcha-text {
+.index-text {
   max-width: 35%;
   color: #000000bd;
   background-color: #ffffff9f;
@@ -102,13 +102,13 @@ a:hover {
   padding: 10px;
 }
 
-.matcha-text h1 {
+.index-text h1 {
   font-size: 50px;
   margin-bottom: 15px;
   margin-left: 10px;
 }
 
-.matcha-text p {
+.index-text p {
   font-size: 18px;
   line-height: 1.6;
   margin-left: 5px;
@@ -133,38 +133,38 @@ a:hover {
     margin-top: 0;
   }
 
-  .matcha-welcoming {
+  .index-welcoming {
     margin: 0 30px;
   }
 
-  .matcha-welcoming-container {
+  .index-welcoming-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .matcha-images {
+  .index-pictures {
     width: 100%;
     flex-direction: column;
     gap: 15px;
   }
 
-  .matcha-welcoming-img {
+  .index-welcoming-pic {
     width: 100%;
     height: auto;
   }
 
-  .matcha-text {
+  .index-text {
     max-width: 100%;
     padding: 20px;
     text-align: center;
   }
 
-  .matcha-text h1 {
+  .index-text h1 {
     font-size: 32px;
     margin-left: 0;
   }
 
-  .matcha-text p {
+  .index-text p {
     font-size: 16px;
     margin-left: 0;
   }
@@ -180,11 +180,11 @@ a:hover {
     max-height: 130px;
   }
 
-  .matcha-text h1 {
+  .index-text h1 {
     font-size: 28px;
   }
 
-  .matcha-text p {
+  .index-text p {
     font-size: 15px;
   }
 }

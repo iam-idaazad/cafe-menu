@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-image: url('body-background.jpeg');
+    background-image: url('./index-pictures/body-background.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -16,7 +16,7 @@ body {
   }
   
   .header-content {
-    background: url('Triple\ Chocolate\ Cheesecake\ _\ Love\ and\ Olive\ Oil.jpeg') no-repeat center center/cover;
+    background: url('./desserts-pictures/') no-repeat center center/cover;
     padding: 70px;
     background-repeat: no-repeat;
     color: white;
