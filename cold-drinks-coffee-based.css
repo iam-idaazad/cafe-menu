@@ -10,13 +10,13 @@ body {
 }
 
 .header {
-  color: #000000be;
+  color: #000000;
   padding: 70px;
   text-align: right;
 }
 
 .header-content {
-  background: url('./cold-drinks-pictures/cold-drinks-header.jpeg') no-repeat center center/cover;
+  background: url('./cold-drinks-coffee-based-pictures/cold-drinks-header.jpeg') no-repeat center center/cover;
   padding: 70px;
   background-repeat: no-repeat;
 }
@@ -41,13 +41,15 @@ body {
 
 
 .header-content h1 {
-  font-family: 'Berkshire Swash', sans-serif;
+  font-family: 'Ruwudu', sans-serif;
   font-size: 50px;
   margin-bottom: 10px;
 }
 
 .header-content p {
   font-size: 18px;
+  font-family: 'Cairo', sans-serif;
+
 }
 
 .drinks-grid {
@@ -86,6 +88,8 @@ body {
   font-size: 17px;
   font-weight: 500;
   color: rgb(0, 0, 0);
+  font-family: 'Cairo', sans-serif;
+
 }
 
 /* Responsive */
