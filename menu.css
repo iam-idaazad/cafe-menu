@@ -6,29 +6,31 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  color: #ffffff;
 }
 
 .header {
   background: url('./index-pictures/index-header.jpg') no-repeat center center/cover;
-  color: #ffffff;
-  padding: 70px;
+  padding: 10px;
   text-align: left;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 a {
-  color: #ffffffab;
+  color: #ffffff85;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 50px;
 }
 
 a:hover {
-  color: #ffffff;
+  color: #ffd900;
 }
 
 .header-content h1 {
   font-family: 'Ruwudu', sans-serif;
   font-size: 2cm;
+  color: white;
 }
 
 .header-content p {
@@ -37,20 +39,28 @@ a:hover {
 }
 
 .menu-section {
-  display: flex;
-  justify-content: center;
-  gap: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   padding: 40px 20px;
   margin-top: -100px;
-  flex-wrap: wrap;
+  justify-content: center;   /* آیتم‌ها وسط چین بشن */
+  align-items: start;        /* همه از بالا شروع بشن */
 }
 
 .menu-item {
   text-align: center;
+  background-color: #441f004f;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* محتوا وسط بلوک بمونه */
 }
 
 .menu-image img {
-  margin-left: 50px;
+  margin: 15px auto;
+  text-align: center;
   max-width: 170px;
   max-height: 170px;
   border-radius: 100%;
@@ -58,136 +68,18 @@ a:hover {
 }
 
 .menu-image img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.menu-item h2 {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #fffffff1;
 }
 
 .menu-item p {
   margin-top: 15px;
   font-size: 17px;
   font-weight: 500;
-  color: #000000c2;
-}
-
-.index-welcoming {
-  background-color: #ffbd8727;
-  margin: 0 100px;
-  padding: 0;
-}
-
-.index-welcoming-container {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-
-.index-pictures {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 60%;
-}
-
-.index-welcoming-pic {
-  width: 48%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.index-text {
-  text-align: right;
-  max-width: 35%;
-  color: #000000;
-  background-color: #ffffff9f;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-}
-
-.index-text h1 {
-  font-size: 50px;
-  margin-bottom: 15px;
-  margin-left: 10px;
-}
-
-.index-text p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-left: 5px;
-}
-
-/* Responsive Design */
-
-@media (max-width: 1024px) {
-  .header {
-    padding: 40px;
-    text-align: center;
-  }
-
-  .header-content h1 {
-    font-size: 1.5cm;
-  }
-
-  .menu-section {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-top: 0;
-  }
-
-  .index-welcoming {
-    margin: 0 30px;
-  }
-
-  .index-welcoming-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .index-pictures {
-    width: 100%;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .index-welcoming-pic {
-    width: 100%;
-    height: auto;
-  }
-
-  .index-text {
-    max-width: 100%;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .index-text h1 {
-    font-size: 32px;
-    margin-left: 0;
-  }
-
-  .index-text p {
-    font-size: 16px;
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-content h1 {
-    font-size: 1.2cm;
-  }
-
-  .menu-image img {
-    max-width: 130px;
-    max-height: 130px;
-  }
-
-  .index-text h1 {
-    font-size: 28px;
-  }
-
-  .index-text p {
-    font-size: 15px;
-  }
+  color: #fffffff1;
 }
